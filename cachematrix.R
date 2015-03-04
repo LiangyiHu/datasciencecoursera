@@ -1,7 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Below are two functions provided to cache matrix inversion, every time if you want to
+## calculate the inverse matrix of x, first pass x through makecachematrix function,
+## store the value, then pass the cached value to cachesolve to get the inverse matrix of x
 
-## Write a short comment describing this function
+## This function provides a list containing four functions, do some pretreatment for
+## Second function
 
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
@@ -18,7 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function checks if the input haven't change, if changed, calculate as usual
+## If it changed, pullthe value from cache.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
